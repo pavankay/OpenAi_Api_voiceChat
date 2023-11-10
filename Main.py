@@ -4,10 +4,14 @@ import wave
 from openai import OpenAI
 import pygame
 import speech_recognition as sr
+from dotenv import load_dotenv
+load_dotenv()
 
 # OpenAI API Key
-OPENAI_API_KEY = "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"  
-client = OpenAI(api_key=OPENAI_API_KEY)
+api_key_openai = os.getenv('OPENAI_API_KEY')
+client = OpenAI(api_key=api_key_openai)
+
+# Rest of your code...
 
 def select_voice():
     voices = ["alloy", "echo", "fable", "onyx", "nova", "shimmer"]
