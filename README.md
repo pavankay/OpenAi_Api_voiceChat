@@ -1,4 +1,5 @@
-#runing the code
+#To start talking
+
 1.clone this respostory
 
 2.In the directory run this command in your termianl: pip install pyaudio wave pygame speech_recognition python-dotenv
