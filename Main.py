@@ -8,8 +8,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # OpenAI API Key
-api_key_openai = os.getenv('OPENAI_API_KEY')
-client = OpenAI(api_key=api_key_openai)
+#api_key_openai = os.getenv('OPENAI_API_KEY')
+client = OpenAI()#if having errors add this api_key=api_key_openai inside
 
 # Rest of your code...
 
